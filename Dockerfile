@@ -11,6 +11,6 @@ RUN echo 'xdebug.remote_enable=1' >> /usr/local/etc/php/php.ini
 RUN echo 'xdebug.remote_connect_back=1' >> /usr/local/etc/php/php.ini
 RUN echo 'xdebug.idekey=PHPSTORM' >> /usr/local/etc/php/php.ini
 
-RUN curl -Lo /usr/local/lib/phpunit.phar https://phar.phpunit.de/phpunit.phar
+RUN curl -Lo /usr/local/lib/phpunit.phar https://phar.phpunit.de/phpunit-6.phar
 RUN cp /usr/local/lib/phpunit.phar /usr/local/bin/phpunit
 RUN chmod 755 /usr/local/bin/phpunit
